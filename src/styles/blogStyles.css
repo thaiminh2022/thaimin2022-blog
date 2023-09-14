@@ -1,0 +1,75 @@
+@tailwind base;
+
+@layer base {
+  .content h1 {
+    @apply my-3 text-4xl font-bold;
+  }
+  .content h2 {
+    @apply my-3 text-3xl font-bold;
+  }
+  .content h3 {
+    @apply my-3 text-2xl font-bold;
+  }
+  .content h4 {
+    @apply my-3 text-xl font-bold;
+  }
+  .content h5 {
+    @apply my-3 text-lg font-bold;
+  }
+  .content h6 {
+    @apply my-3 text-sm font-bold;
+  }
+  .content th,
+  td {
+    @apply border-2 border-accent p-3 text-sm dark:border-accent-light md:text-lg;
+  }
+  .content p,
+  .content li {
+    @apply text-sm md:text-lg;
+  }
+}
+
+.content h1::before,
+.content h2::before,
+.content h3::before,
+.content h4::before,
+.content h5::before,
+.content h6::before {
+  content: "#";
+  margin-right: 0.3em;
+  color: red;
+}
+
+.content li {
+  margin-left: 2rem;
+}
+.content ul li {
+  list-style: square;
+}
+.content ol li {
+  list-style: upper-roman;
+}
+.content ul,
+.content ol,
+.content li {
+  margin-block: 0.3rem;
+}
+.content ul,
+.content ol {
+  list-style-position: inside;
+}
+
+.content table {
+  margin: 1rem;
+}
+
+.content pre {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+
+.content a,
+.content sup {
+  text-decoration: underline;
+}

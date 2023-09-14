@@ -1,0 +1,21 @@
+---
+function generateLink(name: string, link: string) {
+  return { name, link };
+}
+
+const links = [
+  generateLink("Home", "/"),
+  generateLink("About", "/about"),
+  generateLink("Blog", "/blog"),
+];
+---
+
+{
+  links.map(({ name, link }) => (
+    <li class="hover-underline-animation p-5 text-right md:p-0">
+      <a href={`${link}`} class="uppercase">
+        {name}
+      </a>
+    </li>
+  ))
+}

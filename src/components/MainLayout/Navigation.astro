@@ -1,0 +1,22 @@
+---
+import NavLinks from "./NavLinks.astro";
+---
+
+<nav
+  id="navigation"
+  class="absolute top-10 -z-10 w-full flex-col bg-white bg-opacity-95 p-5 opacity-0  md:relative md:top-0 md:p-0 md:opacity-100  md:z-0 dark:bg-background"
+>
+  <ul class="flex h-full w-full flex-col gap-x-5 md:flex-row">
+      <NavLinks />
+      </ul>
+</nav>
+
+<script>
+  const mainBurger = document.querySelector("button#mainBurger");
+  const nav = document.querySelector("#navigation");
+  mainBurger?.addEventListener("click", () => {
+    nav?.classList.toggle("opacity-0");
+    nav?.classList.toggle("-z-10");
+    nav?.classList.toggle("z-10");
+  });
+</script>

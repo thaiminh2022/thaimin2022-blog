@@ -1,0 +1,33 @@
+---
+
+---
+
+<button
+  id="mainBurger"
+  class="flex aspect-square h-9 w-9 items-center justify-center rounded-md p-2 text-2xl ring-zinc-400 transition-all hover:ring-2 md:hidden"
+>
+  <div id="openMenu" class="block">
+    <i class="bx bx-menu text-2xl"></i>
+  </div>
+  <div id="closeMenu" class="hidden">
+    <i class="bx bx-x text-2xl"></i>
+  </div>
+</button>
+
+<script>
+  const openMenu = document.querySelector("#openMenu");
+  const closeMenu = document.querySelector("#closeMenu");
+  const burger = document.querySelector("#mainBurger");
+
+  burger?.addEventListener("click", () => {
+    if (burger.classList.contains("expanded")) {
+      burger.classList.remove("expanded");
+      closeMenu?.classList.toggle("hidden");
+      openMenu?.classList.toggle("hidden");
+    } else {
+      burger.classList.add("expanded");
+      closeMenu?.classList.toggle("hidden");
+      openMenu?.classList.toggle("hidden");
+    }
+  });
+</script>

@@ -1,0 +1,33 @@
+---
+import MainLayout from "./MainLayout.astro";
+import type { CollectionEntry } from "astro:content";
+import "@styles/blogStyles.css";
+
+type Props = {
+  title: string,
+    entry: CollectionEntry<'blog'>
+};
+const props = Astro.props;
+const entry = props.entry;
+
+const { Content } = await entry.render();
+
+const date = entry.data.date.toLocaleDateString(undefined, {
+  dateStyle: "long",
+});
+---
+
+<MainLayout title={props.title}>
+  <main class="flex flex-col gap-y-3">
+    <h1 class="text-3xl font-bold">{entry.data.title}</h1>
+    <p class="text-md font-semibold md:text-lg">{date} / 2 mins read</p>
+    <div class="flex items-center gap-x-2">
+      <i class="bx bx-purchase-tag-alt text-md md:text-lg"></i>
+      {entry.data.tags.map((tag) => <p class="text-md underline">#{tag} </p>)}
+    </div>
+  </main>
+  <article class="content mt-10">
+    <Content />
+  </article>
+  <slot />
+</MainLayout>

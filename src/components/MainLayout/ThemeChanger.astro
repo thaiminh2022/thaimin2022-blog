@@ -1,0 +1,49 @@
+---
+
+---
+
+<button
+  type="button"
+  title="Theme Changer Button"
+  id="themeToggle"
+  class="flex aspect-square h-9 w-9 items-center justify-center rounded-md p-2 ring-zinc-400 transition-all hover:ring-2"
+>
+  <div class="text-2xl dark:hidden">
+    <i class="bx bxs-sun"></i>
+  </div>
+  <div class="hidden text-2xl dark:block">
+    <i class="bx bxs-moon"></i>
+  </div>
+</button>
+
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
+
+  window.localStorage.setItem("theme", theme);
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  };
+
+  document
+    .getElementById("themeToggle")
+    .addEventListener("click", handleToggleClick);
+</script>
