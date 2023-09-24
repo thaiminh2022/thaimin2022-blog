@@ -27,6 +27,9 @@
   .content li {
     @apply text-sm md:text-lg;
   }
+  hr {
+    @apply dark:bg-accent bg-accent-light mb-4 h-1 border-none;
+  }
 }
 
 .content h1::before,
@@ -72,4 +75,9 @@
 .content a,
 .content sup {
   text-decoration: underline;
+}
+
+.content {
+  word-wrap: break-word;
+  margin-block: 1rem;
 }

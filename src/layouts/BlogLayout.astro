@@ -1,35 +1,39 @@
 ---
+import TableOfContent from "@components/Blog/TableOfContent.astro";
 import MainLayout from "./MainLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import "@styles/blogStyles.css";
 
 type Props = {
-  title: string,
-    entry: CollectionEntry<'blog'>
+  title: string;
+  entry: CollectionEntry<"blog">;
 };
 const props = Astro.props;
 const entry = props.entry;
 
-const { Content, remarkPluginFrontmatter } = await entry.render();
+const { Content, headings, remarkPluginFrontmatter } = await entry.render();
 const date = entry.data.date.toLocaleDateString(undefined, {
   dateStyle: "long",
 });
 
 const minuteReads = remarkPluginFrontmatter.minutesRead;
-
 ---
 
 <MainLayout title={props.title}>
-  <main class="flex flex-col gap-y-3">
-    <h1 class="text-3xl font-bold">{entry.data.title}</h1>
-    <p class="text-md font-semibold md:text-lg">{date} / {minuteReads}</p>
-    <div class="flex items-center gap-x-2">
-      <i class="bx bx-purchase-tag-alt text-md md:text-lg"></i>
-      {entry.data.tags.map((tag) => <p class="text-md underline">#{tag} </p>)}
-    </div>
+  <main class="flex flex-col justify-center gap-y-3 divide-y divide-dashed divide-accent-light dark:divide-accent divide-y-3">
+    <section>
+      <h1 class="text-3xl font-bold">{entry.data.title}</h1>
+      <p class="text-md font-semibold md:text-lg">{date} / {minuteReads}</p>
+      <div class="flex items-center gap-x-2">
+        <i class="bx bx-purchase-tag-alt text-md md:text-lg"></i>
+        {entry.data.tags.map((tag) => <p class="text-md underline">#{tag} </p>)}
+      </div>
+    </section>
+
+    <TableOfContent headings={headings} />
+
+    <article class="content">
+      <Content />
+    </article>
   </main>
-  <article class="content mt-10">
-    <Content />
-  </article>
-  <slot />
 </MainLayout>
