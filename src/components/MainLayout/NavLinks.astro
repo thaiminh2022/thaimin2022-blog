@@ -7,13 +7,13 @@ const links = [
   generateLink("Home", "/"),
   generateLink("About", "/blog/about-me"),
   generateLink("Blog", "/blog"),
-  generateLink("Tags", "/tag"),
+  generateLink("Tags", "/tags"),
 ];
 ---
 
 {
   links.map(({ name, link }) => (
-    <li class="hover-underline-animation p-5 text-right md:p-0">
+    <li class="hover-underline-animation p-3 text-right md:p-0">
       <a href={`${link}`} class="uppercase">
         {name}
       </a>

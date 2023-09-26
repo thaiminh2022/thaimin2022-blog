@@ -26,7 +26,7 @@ const minuteReads = remarkPluginFrontmatter.minutesRead;
       <p class="text-md font-semibold md:text-lg">{date} / {minuteReads}</p>
       <div class="flex items-center gap-x-2">
         <i class="bx bx-purchase-tag-alt text-md md:text-lg"></i>
-        {entry.data.tags.map((tag) => <p class="text-md underline">#{tag} </p>)}
+        {entry.data.tags.map((tag) => <a class="text-md underline md:no-underline hover:underline" href={`/tags/${tag}`}>#{tag} </a>)}
       </div>
     </section>
 

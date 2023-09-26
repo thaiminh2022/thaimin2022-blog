@@ -1,4 +1,5 @@
 ---
+import SearchComponent from "@components/SearchComponent.astro";
 import Navigation from "./Navigation.astro";
 import ThemeChanger from "./ThemeChanger.astro";
 import Burger from "./Burger.astro";
@@ -6,14 +7,15 @@ import SiteTitle from "./SiteTitle.astro";
 ---
 
 <header
-  class="relative flex w-full flex-col gap-y-3 md:items-start md:justify-start mb-20"
+  class="relative mb-20 flex w-full flex-col gap-y-3 md:items-start md:justify-start"
 >
   <div class="flex w-full flex-row items-center justify-evenly">
     <section class="relative flex items-center gap-x-3">
-      <i class="bx bx-rocket text-3xl"></i>
+      <i class="bx bx-rocket text-2xl"></i>
       <SiteTitle />
     </section>
-    <div class="md:ml-auto">
+    <div class="ml-auto flex flex-row">
+      <SearchComponent />
       <ThemeChanger />
     </div>
     <Burger />
