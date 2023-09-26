@@ -1,54 +1,80 @@
-# Astro Starter Kit: Basics
+# Thaiminh2022's Blog
 
-```
-npm create astro@latest -- --template basics
-```
+This is my blog, for further information, check out my [profile](https://github.com/thaiminh2022).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+The section below will be a clone of my readme.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# Hi there, I'm Hồ Quốc Thái - aka Thaiminh2022 <img width="30px" src="https://media.tenor.com/images/3b388fe03da271d2674faf85eb7c3fcd/tenor.gif" />
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
 
-## 🚀 Project Structure
+## I'm a High School student from Vietnam. 
 
-Inside of your Astro project, you'll see the following folders and files:
+- 👨‍💻 I’m currently working on game development technologies like Unity, C# etc.
+- 📚 I’m currently learning everything about Frontend or Web development in general 😅.
+- 💪🏼 Future Goals: 🎮 Finish my Bossical project, 🔎 Learn new technologies. 
+- ⚡ Fun fact: I have been coding since grade 5 👶🏻. 
+- Instrument I enjoy: Piano 🎹, Violin 🎻.
+- ⌨ Game I play: League of Legends. 
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+<img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Spotify Playing 🎧
 
-Any static assets, like images, can be placed in the `public/` directory.
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=docfehsgla1643fqrqtbi1e4h&cover_image=false&theme=default&show_offline=false&background_color=121212&bar_color_cover=true)](https://spotify-github-profile.vercel.app/api/view?uid=docfehsgla1643fqrqtbi1e4h&redirect=true)
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+### Contact with me 📝
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+ [![Gmail](https://img.shields.io/badge/-Gmail-ff0000?style=flat-square&logo=gmail&logoColor=white)](mailto:thaiminh2022@gmail.com)
+ [![Facebook](https://img.shields.io/badge/-Facebook-004cff?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/thaiminh2022)
+<br />
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Languages and Tools 🛠 
+![C#](https://img.shields.io/badge/-CSharp-darkgreen?style=flat-square&logo=csharp&logoColor=white)
+![Rust](https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust&logoColor=black)
+![Python](http://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=ffffff)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
+![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+![Sass](https://img.shields.io/badge/-Sass-%23CC6699?style=flat-square&logo=sass&logoColor=ffffff)
+![Markdown](https://img.shields.io/badge/-Markdown-000000?style=flat-square&logo=markdown)
+![Npm](https://img.shields.io/badge/-npm-CB3837?style=flat-square&logo=npm)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=ffffff)
+![Git](https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![VS Code](http://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=ffffff)
+![Windows](http://img.shields.io/badge/-Windows-0078D6?style=flat-square&logo=windows&logoColor=ffffff)
+
+<br/>
+
+---
+
+<br/>
+
+  <h2 align="center"> Github Statistics 📈 </h2>
+  
+  <div align="center"> 
+     <a href="">
+      <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Thaiminh2022&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" />
+    </a>
+    <a href="">
+      <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Thaiminh2022&theme=react&line_height=40&hide=css"/>
+    </a>
+</div>
+  
+<br/>
+
+---
+
+ ### ⭐️ From [Thaiminh2022](https://github.com/Thaiminh2022) ### 
+ 
+---
+
+
