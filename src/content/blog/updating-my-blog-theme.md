@@ -51,7 +51,7 @@ From that point almost every game uis / apps i built used that theme, it looks c
 
 ### Other changes
 
-#### Commit 
+#### Commit [6d104cc](https://github.com/thaiminh2022/thaiminh2022.github.io/commit/6d104ccd5bf834eeb0fb0233beabc21eba5903d0)
 
 - Remove scroll to top (we have mouse now)
 - Clear seperation between header - table of content - blog
