@@ -1,11 +1,10 @@
 ---
-import MoveToTop from "@components/MainLayout/MoveToTop.astro"
 import Footer from "@components/MainLayout/Footer.astro";
 import Header from "@components/MainLayout/Header.astro";
 import "@styles/utils.css";
 import "@styles/tailwind.css";
 interface Props {
-  title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -13,24 +12,23 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body
-    class="mx-auto flex min-h-screen max-w-3xl flex-col px-8 pt-16 font-mono selection:bg-accent-light dark:bg-background dark:text-text"
-  >
-    <Header />
-      <slot />
-    <MoveToTop />
-    <Footer />
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body
+        class="mx-auto flex min-h-screen max-w-4xl flex-col bg-base-light px-8 pt-16 font-mono selection:bg-highlight-med-light dark:bg-base-dark dark:text-text-dark selection:dark:bg-highlight-med-dark"
+    >
+        <Header />
+        <slot />
+        <Footer />
+    </body>
 </html>

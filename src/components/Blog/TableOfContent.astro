@@ -8,21 +8,26 @@ type Props = {
 const { headings } = Astro.props;
 ---
 
-<section>
+<section class="bg-overlay-light p-3 dark:bg-overlay-dark">
   <button
     type="button"
     id="TOC-btn"
     class="flex w-fit flex-row flex-wrap items-center rounded hover:scale-105"
   >
-    <p class="text-xl font-bold underline">#Table of content</p>
+    <p class="text-xl font-bold underline">
+      <span class="text-iris-light dark:text-iris-dark">#</span> Table of
+      content
+    </p>
     <i class="bx bx-down-arrow-alt text-xl"></i>
   </button>
 
   <ul id="heading" class="hidden">
     {
       headings.map((h) => (
-        <li style={`margin-left:${(h.depth-1) * 2}em`}>
-          <a href={"#" + h.slug} class="text-xl hover:underline">{h.depth < 3 ? `# ${h.text}` : h.text}</a>
+        <li style={`margin-left:${(h.depth - 1) * 2}em`}>
+          <a href={"#" + h.slug} class="text-xl hover:underline">
+            {h.depth < 3 ? `# ${h.text}` : h.text}
+          </a>
         </li>
       ))
     }

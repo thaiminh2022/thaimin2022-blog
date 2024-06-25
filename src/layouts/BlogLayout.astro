@@ -20,19 +20,33 @@ const minuteReads = remarkPluginFrontmatter.minutesRead;
 ---
 
 <MainLayout title={props.title}>
-  <main class="flex flex-col justify-center gap-y-3 divide-y divide-dashed divide-accent-light dark:divide-accent divide-y-3">
-    <section>
-      <h1 class="text-3xl font-bold">{entry.data.title}</h1>
+  <main class="flex flex-col justify-center gap-y-1">
+    <section class="bg-overlay-light p-3 dark:bg-overlay-dark">
+      <h1 class="text-3xl font-bold text-gold-light dark:text-gold-dark">
+        {entry.data.title}
+      </h1>
       <p class="text-md font-semibold md:text-lg">{date} / {minuteReads}</p>
-      <div class="flex items-center gap-x-2">
+      <div
+        class="flex items-center gap-x-2 text-subtle-light dark:text-subtle-dark"
+      >
         <i class="bx bx-purchase-tag-alt text-md md:text-lg"></i>
-        {entry.data.tags.map((tag) => <a class="text-md underline md:no-underline hover:underline" href={`/tags/${tag}`}>#{tag} </a>)}
+        {
+          entry.data.tags.map((tag) => (
+            <a
+              class="text-md underline hover:underline md:no-underline"
+              href={`/tags/${tag}`}
+            >
+              #{tag}{" "}
+            </a>
+          ))
+        }
       </div>
     </section>
 
     <TableOfContent headings={headings} />
 
-    <article class="content">
+    <article class="content bg-surface-light px-3 dark:bg-surface-dark">
+      <img src={entry.data.heroImage?.src} alt={entry.data.heroImage?.alt} />
       <Content />
     </article>
   </main>

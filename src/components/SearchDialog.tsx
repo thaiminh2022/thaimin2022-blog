@@ -1,4 +1,4 @@
-import React, { useMemo,  useState } from "react";
+import React, { useMemo, useState } from "react";
 import Fuse from "fuse.js";
 
 type Props = {
@@ -35,7 +35,7 @@ function SearchDialog(props: Props) {
 
     return (
         <dialog
-            className="mx-auto h-1/4 w-4/5 rounded-md border-2 border-accent-light p-3 dark:border-accent dark:bg-secondary dark:text-text md:h-1/2"
+            className="mx-auto h-1/4 w-4/5 rounded-md border-2 border-highlight-med-light dark:border-highlight-med-dark p-3 dark:text-text-dark md:h-1/2 bg-overlay-light dark:bg-overlay-dark"
             id="searchDialog"
         >
             <div className="wrapper flex flex-col gap-y-3 ">
@@ -47,7 +47,7 @@ function SearchDialog(props: Props) {
                         className="ml-auto flex justify-center align-middle text-4xl"
                         id="closeSearchBtn"
                     >
-                        <i className="bx bx-x text-red-400"></i>
+                        <i className="bx bx-x text-rose-light dark:text-rose-dark"></i>
                     </button>
                 </div>
                 <input
@@ -60,10 +60,10 @@ function SearchDialog(props: Props) {
                     onChange={(e) => {
                         setSearchQuery(e.target.value);
                     }}
-                    className="w-full rounded-md border-2 p-2 text-xl text-black"
+                    className="w-full rounded-md border-2 p-2 text-xl border-highlight-low-light dark:border-highlight-low-dark bg-surface-light dark:bg-surface-dark"
                     placeholder="Enter your search term"
                 />
-                <ul className="mt-3 flex flex-col gap-y-3 divide-y divide-y-2 divide-dashed divide-accent-light p-3 dark:divide-accent">
+                <ul className="mt-3 flex flex-col gap-y-3 divide-y-2 divide-dashed divide-highlight-low-light p-3 dark:divide-highlight-low-dark">
                     {posts &&
                         posts.map((post) => (
                             <li className="w-full" key={post.slug}>

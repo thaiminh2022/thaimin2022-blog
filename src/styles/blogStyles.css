@@ -4,31 +4,39 @@
   .content h1 {
     @apply my-3 text-4xl font-bold;
   }
+
   .content h2 {
     @apply my-3 text-3xl font-bold;
   }
+
   .content h3 {
     @apply my-3 text-2xl font-bold;
   }
+
   .content h4 {
     @apply my-3 text-xl font-bold;
   }
+
   .content h5 {
     @apply my-3 text-lg font-bold;
   }
+
   .content h6 {
     @apply my-3 text-sm font-bold;
   }
+
   .content th,
   td {
-    @apply border-2 border-accent p-3 text-sm dark:border-accent-light md:text-lg;
+    @apply border-2 p-3 text-sm md:text-lg;
   }
+
   .content p,
   .content li {
     @apply text-sm md:text-lg;
   }
+
   hr {
-    @apply dark:bg-accent bg-accent-light mb-4 h-1 border-none;
+    @apply mb-4 h-1 border-none;
   }
 }
 
@@ -40,23 +48,27 @@
 .content h6::before {
   content: "#";
   margin-right: 0.3em;
-  color: red;
+  @apply text-iris-light dark:text-iris-dark;
 }
 
 .content li {
   margin-left: 2rem;
 }
+
 .content ul li {
   list-style: square;
 }
+
 .content ol li {
   list-style: upper-roman;
 }
+
 .content ul,
 .content ol,
 .content li {
   margin-block: 0.3rem;
 }
+
 .content ul,
 .content ol {
   list-style-position: inside;

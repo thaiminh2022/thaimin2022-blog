@@ -39,7 +39,7 @@ const { slug: tag } = Astro.params as Params;
     {
       posts.map((p) => (
         <a class="flex flex-col gap-x-5  md:flex-row" href={`/blog/${p.slug}`}>
-          <p class="italic text-accent-light md:text-accent">
+          <p class="md:text-text italic text-text-light">
             {p.data.date.toLocaleDateString(undefined, {
               dateStyle: "long",
             })}

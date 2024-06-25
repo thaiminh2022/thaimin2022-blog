@@ -10,14 +10,12 @@ const posts = await getCollection("blog");
   {
     posts.map((p) => (
       <a class="flex flex-col gap-x-5  md:flex-row" href={`/blog/${p.slug}`}>
-        <p class="italic text-accent-light dark:text-accent font-semibold">
+        <p class="text-accent-light dark:text-accent font-semibold italic">
           {p.data.date.toLocaleDateString(undefined, {
             dateStyle: "long",
           })}
         </p>
-        <p class="underline underline-offset-4">
-          {p.data.title} 
-          </p>
+        <p class="underline underline-offset-4">{p.data.title}</p>
       </a>
     ))
   }
