@@ -3,6 +3,7 @@ import TableOfContent from "@components/Blog/TableOfContent.astro";
 import MainLayout from "./MainLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import "@styles/blogStyles.css";
+import ScrollToTop from "@components/ScrollToTop.astro";
 
 type Props = {
   title: string;
@@ -50,4 +51,5 @@ const minuteReads = remarkPluginFrontmatter.minutesRead;
       <Content />
     </article>
   </main>
+  <ScrollToTop />
 </MainLayout>

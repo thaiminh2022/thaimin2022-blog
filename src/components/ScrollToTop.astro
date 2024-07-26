@@ -1,0 +1,36 @@
+---
+
+---
+
+<div class="fixed bottom-0 left-0 grid w-full place-items-center">
+  <button
+    class="w-3/5 bg-overlay-light p-1 text-center align-middle font-bold transition-opacity dark:bg-overlay-dark"
+    id="scroll-to-top"
+  >
+    Scroll to top</button
+  >
+</div>
+
+<script>
+  let scrollBtn = document.getElementById("scroll-to-top");
+
+  window.onscroll = () => {
+    if (scrollBtn === null) {
+      return;
+    }
+
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollBtn.style.opacity = "1";
+    } else {
+      scrollBtn.style.opacity = "0";
+    }
+  };
+
+  scrollBtn?.addEventListener("click", () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
+</script>
