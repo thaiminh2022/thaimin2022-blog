@@ -1,6 +1,7 @@
 # Thaiminh2022's Blog
 
-This is my blog, for further information, check out my [profile](https://github.com/thaiminh2022).
+The blog is hosted at: https://thaiminh2022.github.io
+For further information, check out my [profile](https://github.com/thaiminh2022).
 
 The section below will be a clone of my readme.
 
