@@ -3,7 +3,7 @@
 The blog is hosted at: https://thaiminh2022.github.io </br>
 For further information, check out my [profile](https://github.com/thaiminh2022)
 
-The section below will be a clone of my readme.
+The section below will be a clone of my profile's readme.
 
 # Hi there, I'm Hồ Quốc Thái - aka Thaiminh2022 <img width="30px" src="https://media.tenor.com/images/3b388fe03da271d2674faf85eb7c3fcd/tenor.gif" />
 
